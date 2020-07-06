@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -534,6 +537,113 @@ transition-duration: 0.3s;
       <string/>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="pauseServiceButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>580</y>
+      <width>39</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#pauseServiceButton{
+background-color:transparent;
+border: 2px solid #F5A623;
+border-radius : 15px;
+}
+QPushButton#pauseServiceButton:hover{
+background-color:transparent;
+border: 2px dotted #F5A623;
+border-radius : 15px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/pause.png</normaloff>icons/pause.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>27</width>
+      <height>27</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startServiceButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>580</y>
+      <width>39</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#startServiceButton{
+background-color:transparent;
+border: 2px solid #5DCC0B;
+border-radius : 15px;
+}
+QPushButton#startServiceButton:hover{
+background-color:transparent;
+border: 2px dotted #5DCC0B;
+border-radius : 15px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/play.png</normaloff>icons/play.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>27</width>
+      <height>27</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopAppButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#stopAppButton{
+background-color:transparent;
+}
+QPushButton#stopAppButton:hover{
+background-color:transparent;
+border: 2px dotted #F5A623;
+border-radius : 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icons/cancel.png</normaloff>icons/cancel.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>39</width>
+      <height>39</height>
+     </size>
+    </property>
    </widget>
   </widget>
  </widget>
